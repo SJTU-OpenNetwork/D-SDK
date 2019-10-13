@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>io.textile</groupId>
-  <artifactId>textile</artifactId>
-  <version>2.0.8</version>
+  <groupId>sjtu.opennet</groupId>
+  <artifactId>hon</artifactId>
+  <version>0.0.1</version>
   <packaging>aar</packaging>
-  <name>textile</name>
-  <description>Textile SDK for Android</description>
-  <url>https://github.com/textileio/android-textile</url>
+  <name>hon</name>
+  <description>HON SDK for Android</description>
+  <url>https://github.com/SJTU-OpenNetwork/HON-SDK</url>
   <licenses>
     <license>
       <name>MIT</name>
@@ -16,15 +16,14 @@
   </licenses>
   <developers>
     <developer>
-      <id>textile</id>
-      <name>Textile</name>
-      <email>contact@textile.io</email>
+      <id>sjtu</id>
+      <name>opennet</name>
     </developer>
   </developers>
   <scm>
-    <connection>https://github.com/textileio/android-textile.git</connection>
-    <developerConnection>https://github.com/textileio/android-textile.git</developerConnection>
-    <url>https://github.com/textileio/android-textile</url>
+    <connection>https://github.com/SJTU-OpenNetwork/HON-SDK.git</connection>
+    <developerConnection>https://github.com/SJTU-OpenNetwork/HON-SDK.git</developerConnection>
+    <url>https://github.com/SJTU-OpenNetwork/HON-SDK</url>
   </scm>
   <dependencies>
     <dependency>
@@ -34,9 +33,9 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>io.textile</groupId>
+      <groupId>sjtu.opennet</groupId>
       <artifactId>mobile</artifactId>
-      <version>0.7.0</version>
+      <version>0.0.1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -95,9 +94,9 @@
       <version>0.7.0</version>
     </dependency>
     <dependency>
-      <groupId>io.textile</groupId>
+      <groupId>sjtu.opennet</groupId>
       <artifactId>mobile</artifactId>
-      <version>0.7.0</version>
+      <version>0.0.1</version>
     </dependency>
   </dependencies>
 </project>
