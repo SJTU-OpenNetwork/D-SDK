@@ -1,4 +1,4 @@
-package io.textile.textile;
+package sjtu.opennet.hon;
 
 import com.google.protobuf.ByteString;
 import com.google.protobuf.Timestamp;

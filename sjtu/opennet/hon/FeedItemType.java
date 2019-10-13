@@ -1,4 +1,4 @@
-package io.textile.textile;
+package sjtu.opennet.hon;
 
 public enum FeedItemType {
     TEXT,

@@ -1,4 +1,4 @@
-package io.textile.textile;
+package sjtu.opennet.hon;
 
 import io.textile.pb.Model.Contact;
 import io.textile.pb.QueryOuterClass.QueryOptions;
