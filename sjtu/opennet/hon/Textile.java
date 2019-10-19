@@ -179,6 +179,16 @@ public class Textile implements LifecycleObserver {
     }
 
     /**
+     * Create a new Textile wallet
+     * @param huaweiOpenId Huawei open id
+     * @return The new wallet recovery phrase
+     * @throws Exception The exception that occurred
+     */
+    public static String newWalletFromHuaweiOpenId(final String huaweiOpenId) throws Exception {
+        return Mobile.newWalletFromHuaweiOpenId(huaweiOpenId);
+    }
+
+    /**
      * Resolve a wallet account
      * @param phrase The wallet recovery phrase
      * @param index The index of the account to resolve
