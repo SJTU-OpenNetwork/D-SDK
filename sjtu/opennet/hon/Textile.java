@@ -197,8 +197,7 @@ public class Textile implements LifecycleObserver {
      * @return A boolean value indicating if Textile is initialized or not
      */
     public static Boolean isInitialized(final String repoPath) {
-        File file = new File(repoPath);
-        return file.exists() && file.isDirectory();
+        return Mobile.repoExists(repoPath);
     }
 
     /**
