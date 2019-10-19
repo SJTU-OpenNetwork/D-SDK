@@ -214,6 +214,26 @@ public class Textile implements LifecycleObserver {
         config.setRepoPath(repoPath);
         config.setLogToDisk(logToDisk);
         config.setDebug(debug);
+        config.setIsPrivate(false);
+        Mobile.initRepo(config);
+    }
+
+    /**
+     * Initialize the shared Textile instance with an existing account seed
+     * @param repoPath The path to the Textile repo
+     * @param seed The account seed
+     * @param debug Sets the log level to debug or not
+     * @param logToDisk Whether or not to write Textile logs to disk
+     * @param isPriavte Whether or not to use private network
+     * @throws Exception The exception that occurred
+     */
+    public static void initialize(final String repoPath, final String seed, final boolean debug, final boolean logToDisk, final boolean isPrivate) throws Exception {
+        final InitConfig config = new InitConfig();
+        config.setSeed(seed);
+        config.setRepoPath(repoPath);
+        config.setLogToDisk(logToDisk);
+        config.setDebug(debug);
+        config.setIsPrivate(isPrivate);
         Mobile.initRepo(config);
     }
 
@@ -229,6 +249,22 @@ public class Textile implements LifecycleObserver {
         final String recoveryPhrase = Textile.newWallet(WALLET_WORD_COUNT);
         final MobileWalletAccount account = Textile.walletAccountAt(recoveryPhrase, WALLET_ACCOUNT_INDEX, WALLET_PASSPHRASE);
         Textile.initialize(repoPath, account.getSeed(), debug, logToDisk);
+        return recoveryPhrase;
+    }
+
+    /**
+     * Initialize the shared Textile instance, creating a new wallet
+     * @param repoPath The path to the Textile repo
+     * @param debug Sets the log level to debug or not
+     * @param logToDisk Whether or not to write Textile logs to disk
+     * @param isPriavte Whether or not to use private network
+     * @return The wallet recovery phrase
+     * @throws Exception The exception that occurred
+     */
+    public static String initializeCreatingNewWalletAndAccount(final String repoPath, final boolean debug, final boolean logToDisk) throws Exception {
+        final String recoveryPhrase = Textile.newWallet(WALLET_WORD_COUNT);
+        final MobileWalletAccount account = Textile.walletAccountAt(recoveryPhrase, WALLET_ACCOUNT_INDEX, WALLET_PASSPHRASE);
+        Textile.initialize(repoPath, account.getSeed(), debug, logToDisk, isPrivate);
         return recoveryPhrase;
     }
 
