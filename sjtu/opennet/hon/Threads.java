@@ -83,7 +83,41 @@ public class Threads extends NodeDependent {
         final byte[] bytes = node.threadPeers(threadId);
         return PeerList.parseFrom(bytes != null ? bytes : new byte[0]);
     }
-
+    
+    /**
+     * List all admin contacts that participate in a particular thread
+     * @param threadId The id of the thread to query
+     * @return An object containing a list of admin contacts
+     * @throws Exception The exception that occurred
+     */
+    public PeerList admins(final String threadId) throws Exception {
+        final byte[] bytes = node.threadAdmins(threadId);
+        return PeerList.parseFrom(bytes != null ? bytes : new byte[0]);
+    }
+    
+    /**
+     * List all non-admin contacts that participate in a particular thread
+     * @param threadId The id of the thread to query
+     * @return An object containing a list of non-admin contacts
+     * @throws Exception The exception that occurred
+     */
+    public PeerList nonAdmins(final String threadId) throws Exception {
+        final byte[] bytes = node.threadNonAdmins(threadId);
+        return PeerList.parseFrom(bytes != null ? bytes : new byte[0]);
+    }
+    
+    /** TODO
+     * Add an admin (set a peer to admin) in a particular thread
+     * @param threadId The id of the thread to query
+     * @param peerId
+     * @return An object containing a list of admin contacts
+     * @throws Exception The exception that occurred
+     */
+    public void addAdmin(final String threadId) throws Exception {
+        final byte[] bytes = node.threadAdmins(threadId);
+        return PeerList.parseFrom(bytes != null ? bytes : new byte[0]);
+    }
+    
     /**
      * Leave a thread
      * @param threadId The id of the thread to remove
