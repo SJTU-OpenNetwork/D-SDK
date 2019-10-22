@@ -106,16 +106,14 @@ public class Threads extends NodeDependent {
         return PeerList.parseFrom(bytes != null ? bytes : new byte[0]);
     }
     
-    /** TODO
+    /** 
      * Add an admin (set a peer to admin) in a particular thread
      * @param threadId The id of the thread to query
-     * @param peerId
-     * @return An object containing a list of admin contacts
+     * @param peerId the id of the new admin
      * @throws Exception The exception that occurred
      */
-    public void addAdmin(final String threadId) throws Exception {
-        final byte[] bytes = node.threadAdmins(threadId);
-        return PeerList.parseFrom(bytes != null ? bytes : new byte[0]);
+    public void addAdmin(final String threadId, final String peerId) throws Exception {
+        node.threadAddAdmin(threadId, peerId);
     }
     
     /**
@@ -125,7 +123,7 @@ public class Threads extends NodeDependent {
      * @throws Exception The exception that occurred
      */
     public String remove(final String threadId) throws Exception {
-        return node.removeThread(threadId);
+        node.removeThread(threadId);
     }
 
     /**
