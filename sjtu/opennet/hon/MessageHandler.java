@@ -4,15 +4,15 @@ import net.gotev.uploadservice.Logger;
 
 import java.util.Set;
 
-import io.textile.pb.MessageOuterClass.Error;
-import io.textile.pb.Mobile.MobileEventType;
-import io.textile.pb.Mobile.MobileQueryEvent;
-import io.textile.pb.Model.CafeSyncGroupStatus;
-import io.textile.pb.Model.Notification;
-import io.textile.pb.Model.Thread;
-import io.textile.pb.Model.Contact;
-import io.textile.pb.View.AccountUpdate;
-import io.textile.pb.View.FeedItem;
+import sjtu.opennet.pb.MessageOuterClass.Error;
+import sjtu.opennet.pb.Mobile.MobileEventType;
+import sjtu.opennet.pb.Mobile.MobileQueryEvent;
+import sjtu.opennet.pb.Model.CafeSyncGroupStatus;
+import sjtu.opennet.pb.Model.Notification;
+import sjtu.opennet.pb.Model.Thread;
+import sjtu.opennet.pb.Model.Contact;
+import sjtu.opennet.pb.View.AccountUpdate;
+import sjtu.opennet.pb.View.FeedItem;
 
 import mobile.Event;
 import mobile.Messenger;

@@ -5,15 +5,15 @@ import com.google.protobuf.Timestamp;
 
 import java.util.Date;
 
-import io.textile.pb.View.Announce;
-import io.textile.pb.View.Comment;
-import io.textile.pb.View.FeedItem;
-import io.textile.pb.View.Files;
-import io.textile.pb.View.Ignore;
-import io.textile.pb.View.Join;
-import io.textile.pb.View.Leave;
-import io.textile.pb.View.Like;
-import io.textile.pb.View.Text;
+import sjtu.opennet.pb.View.Announce;
+import sjtu.opennet.pb.View.Comment;
+import sjtu.opennet.pb.View.FeedItem;
+import sjtu.opennet.pb.View.Files;
+import sjtu.opennet.pb.View.Ignore;
+import sjtu.opennet.pb.View.Join;
+import sjtu.opennet.pb.View.Leave;
+import sjtu.opennet.pb.View.Like;
+import sjtu.opennet.pb.View.Text;
 
 public class Util {
 

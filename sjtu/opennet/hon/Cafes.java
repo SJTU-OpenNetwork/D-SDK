@@ -1,7 +1,7 @@
 package sjtu.opennet.hon;
 
-import io.textile.pb.Model.CafeSessionList;
-import io.textile.pb.Model.CafeSession;
+import sjtu.opennet.pb.Model.CafeSessionList;
+import sjtu.opennet.pb.Model.CafeSession;
 import mobile.Mobile_;
 import mobile.ProtoCallback;
 

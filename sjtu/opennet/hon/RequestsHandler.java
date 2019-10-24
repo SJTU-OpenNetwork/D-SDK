@@ -14,8 +14,8 @@ import java.util.concurrent.Future;
 import java.util.stream.Collectors;
 
 import core.CafeOutboxHandler;
-import io.textile.pb.Model.CafeHTTPRequest;
-import io.textile.pb.View.Strings;
+import sjtu.opennet.pb.Model.CafeHTTPRequest;
+import sjtu.opennet.pb.View.Strings;
 
 /**
  * Handles HTTP requests queued by the Textile node

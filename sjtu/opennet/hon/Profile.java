@@ -1,8 +1,8 @@
 package sjtu.opennet.hon;
 
-import io.textile.pb.Model;
-import io.textile.pb.Model.Peer;
-import io.textile.pb.Model.Thread;
+import sjtu.opennet.pb.Model;
+import sjtu.opennet.pb.Model.Peer;
+import sjtu.opennet.pb.Model.Thread;
 import mobile.Mobile_;
 
 /**

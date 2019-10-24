@@ -1,6 +1,6 @@
 package sjtu.opennet.hon;
 
-import io.textile.pb.Model.CafeSyncGroupStatus;
+import sjtu.opennet.pb.Model.CafeSyncGroupStatus;
 
 public class TextileLoggingListener extends BaseTextileEventListener {
 

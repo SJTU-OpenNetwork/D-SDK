@@ -1,6 +1,6 @@
 package sjtu.opennet.hon;
 
-import io.textile.pb.Model.NotificationList;
+import sjtu.opennet.pb.Model.NotificationList;
 import mobile.Mobile_;
 
 /**

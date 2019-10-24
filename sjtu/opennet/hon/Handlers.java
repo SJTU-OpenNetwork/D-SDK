@@ -1,6 +1,6 @@
 package sjtu.opennet.hon;
 
-import io.textile.pb.Model;
+import sjtu.opennet.pb.Model;
 
 /**
  * Wrapper around common handlers

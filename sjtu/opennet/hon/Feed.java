@@ -2,9 +2,9 @@ package sjtu.opennet.hon;
 
 import java.util.ArrayList;
 
-import io.textile.pb.View.FeedItem;
-import io.textile.pb.View.FeedRequest;
-import io.textile.pb.View.FeedItemList;
+import sjtu.opennet.pb.View.FeedItem;
+import sjtu.opennet.pb.View.FeedRequest;
+import sjtu.opennet.pb.View.FeedItemList;
 import mobile.Mobile_;
 
 /**

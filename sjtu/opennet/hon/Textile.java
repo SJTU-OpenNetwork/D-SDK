@@ -18,8 +18,8 @@ import net.gotev.uploadservice.okhttp.OkHttpStack;
 import java.io.File;
 import java.util.HashSet;
 
-import io.textile.pb.Mobile.MobileWalletAccount;
-import io.textile.pb.View.Summary;
+import sjtu.opennet.pb.Mobile.MobileWalletAccount;
+import sjtu.opennet.pb.View.Summary;
 import mobile.InitConfig;
 import mobile.MigrateConfig;
 import mobile.Mobile;
@@ -271,7 +271,7 @@ public class Textile implements LifecycleObserver {
      * @return The wallet recovery phrase
      * @throws Exception The exception that occurred
      */
-    public static String initializeCreatingNewWalletAndAccount(final String repoPath, final boolean debug, final boolean logToDisk) throws Exception {
+    public static String initializeCreatingNewWalletAndAccount(final String repoPath, final boolean debug, final boolean logToDisk, final boolean isPrivate) throws Exception {
         final String recoveryPhrase = Textile.newWallet(WALLET_WORD_COUNT);
         final MobileWalletAccount account = Textile.walletAccountAt(recoveryPhrase, WALLET_ACCOUNT_INDEX, WALLET_PASSPHRASE);
         Textile.initialize(repoPath, account.getSeed(), debug, logToDisk, isPrivate);

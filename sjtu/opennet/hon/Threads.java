@@ -1,11 +1,11 @@
 package sjtu.opennet.hon;
 
-import io.textile.pb.Model.Thread;
-import io.textile.pb.Model.ThreadList;
-import io.textile.pb.Model.PeerList;
-import io.textile.pb.QueryOuterClass.ThreadSnapshotQuery;
-import io.textile.pb.QueryOuterClass.QueryOptions;
-import io.textile.pb.View.AddThreadConfig;
+import sjtu.opennet.pb.Model.Thread;
+import sjtu.opennet.pb.Model.ThreadList;
+import sjtu.opennet.pb.Model.PeerList;
+import sjtu.opennet.pb.QueryOuterClass.ThreadSnapshotQuery;
+import sjtu.opennet.pb.QueryOuterClass.QueryOptions;
+import sjtu.opennet.pb.View.AddThreadConfig;
 import mobile.Mobile_;
 import mobile.SearchHandle;
 

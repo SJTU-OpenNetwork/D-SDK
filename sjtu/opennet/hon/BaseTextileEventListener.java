@@ -1,9 +1,9 @@
 package sjtu.opennet.hon;
 
-import io.textile.pb.Model.CafeSyncGroupStatus;
-import io.textile.pb.Model.Notification;
-import io.textile.pb.Model.Thread;
-import io.textile.pb.Model.Contact;
+import sjtu.opennet.pb.Model.CafeSyncGroupStatus;
+import sjtu.opennet.pb.Model.Notification;
+import sjtu.opennet.pb.Model.Thread;
+import sjtu.opennet.pb.Model.Contact;
 
 /**
  * A default implementation of TextileEventListener that can be extended to override specific methods

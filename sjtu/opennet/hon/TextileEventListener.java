@@ -1,9 +1,9 @@
 package sjtu.opennet.hon;
 
-import io.textile.pb.Model.CafeSyncGroupStatus;
-import io.textile.pb.Model.Contact;
-import io.textile.pb.Model.Thread;
-import io.textile.pb.Model.Notification;
+import sjtu.opennet.pb.Model.CafeSyncGroupStatus;
+import sjtu.opennet.pb.Model.Contact;
+import sjtu.opennet.pb.Model.Thread;
+import sjtu.opennet.pb.Model.Notification;
 
 /**
  * Interface that can be implemented in order to receive callbacks from Textile about events of interest

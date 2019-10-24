@@ -1,6 +1,6 @@
 package sjtu.opennet.hon;
 
-import io.textile.pb.View.TextList;
+import sjtu.opennet.pb.View.TextList;
 import mobile.Mobile_;
 
 /**

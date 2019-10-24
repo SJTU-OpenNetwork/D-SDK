@@ -1,7 +1,7 @@
 package sjtu.opennet.hon;
 
-import io.textile.pb.Model.Contact;
-import io.textile.pb.QueryOuterClass.QueryOptions;
+import sjtu.opennet.pb.Model.Contact;
+import sjtu.opennet.pb.QueryOuterClass.QueryOptions;
 
 import mobile.Mobile_;
 import mobile.SearchHandle;

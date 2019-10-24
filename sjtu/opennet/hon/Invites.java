@@ -1,7 +1,7 @@
 package sjtu.opennet.hon;
 
-import io.textile.pb.View.InviteViewList;
-import io.textile.pb.View.ExternalInvite;
+import sjtu.opennet.pb.View.InviteViewList;
+import sjtu.opennet.pb.View.ExternalInvite;
 import mobile.Mobile_;
 
 /**
