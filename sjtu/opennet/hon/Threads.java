@@ -115,6 +115,19 @@ public class Threads extends NodeDependent {
     public void addAdmin(final String threadId, final String peerId) throws Exception {
         node.threadAddAdmin(threadId, peerId);
     }
+   
+    public boolean isAdmin(final String threadId, final String peerId) throws Exception {
+        return node.isAdminById(threadId, peerId);
+    }
+    /** 
+     * Remove a peer from a particular thread
+     * @param threadId The id of the thread to query
+     * @param peerId the id of the peer to be removed
+     * @throws Exception The exception that occurred
+     */
+    public void removePeer(final String threadId, final String peerId) throws Exception {
+        node.threadRemovePeer(threadId, peerId);
+    }
     
     /**
      * Leave a thread
