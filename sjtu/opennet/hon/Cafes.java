@@ -1,5 +1,8 @@
 package sjtu.opennet.hon;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import mobile.Mobile_;
 import mobile.ProtoCallback;
 import sjtu.opennet.textilepb.Model.CafeSession;
@@ -12,6 +15,26 @@ public class Cafes extends NodeDependent {
 
     Cafes(final Mobile_ node) {
         super(node);
+    }
+
+    class CafeAddress {
+        public String address;
+        public String token;
+        CafeAddress(final String address, final String token){
+            this.address = address;
+            this.token =token;
+        }
+    }
+
+    /**
+     * Used to elect cafes throughout all devices
+     * @return handler An object that will get called with the operation is complete
+     */
+    public List<CafeAddress> getCafes() {
+        List<CafeAddress> res = new ArrayList<CafeAddress>();
+        res.add(new CafeAddress("http://159.138.132.28:40601","6kCnzeBvbcGU6xNjAscBJj1zGe4WgCLyAw4iPfig3bphyimcaC9PrUC7Q8ZG"));
+//        res.add(new CafeAddress("",""));
+        return res;
     }
 
     /**
